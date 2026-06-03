@@ -8,32 +8,8 @@ Aplicação web desenvolvida para fins acadêmicos com o objetivo de auxiliar us
 - Node.js
 - MySQL
 
-## Como Executar
-### 1. Clonar o Repositório
-```bash
-git clone https://github.com/nicoli-saldanha/sistema-gerenciamento-livros.git
-```
-
-### 2. Acessar a pasta do projeto
-```bash
-cd sistema-gerenciamento-livros
-```
-
-### 3. Instalar as Dependências
-```bash
-npm install
-```
-
-### 4. Criar o banco de dados
-Execute o script **banco_livros.sql** no MySQL.
-
-### 5 . Iniciar o Servidor
-```bash
-node index.js
-```
-
-### 6. Acessar a Aplicação
-Abra o navegador e acesse:
+## Como Acessar a Aplicação
+Clique no link abaixo para acessar:
 ```text
-http://localhost:3000
+https://believable-embrace-production-0e3a.up.railway.app/listar
 ```
