@@ -1,13 +1,13 @@
 {
-  "name": "aula06-05",
+  "name": "aula27-05",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema de gerenciamento de livros",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicoli S. Ricardo",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {

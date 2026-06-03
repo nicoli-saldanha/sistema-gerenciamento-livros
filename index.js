@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
@@ -19,10 +19,11 @@ app.get('/listar', (req, res) => {
 });
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '12345',
-    database: 'banco_livros'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '12345',
+    database: process.env.DB_NAME || 'banco_livros',
+    port: process.env.DB_PORT || 3306
 });
 
 db.connect((err) => {
@@ -138,5 +139,5 @@ app.delete('/livros/:id', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+    console.log(`Servidor rodando na porta ${port}`);
 });
