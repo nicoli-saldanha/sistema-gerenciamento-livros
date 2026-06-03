@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 27-05</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Meus livros!</h1>
+        <h3><i>Sistema de gerenciamento de livros lidos</i></h3>
+    </header>
+
+    <nav>
+        <a href="index.html">Cadastrar</a>
+        <a href="listar.html">Listar</a>
+    </nav>
+
+    <div class="container">
+        <button class="botao-recarregar" onclick="location.reload()">
+            <img src="imagens/reiniciar.png" alt="Recarregar">
+        </button>
+
+        <h2>Cadastrar Novo Livro</h2>
+        <form action="http://localhost:3000/add-livro" method="POST">
+            <label>Título:</label>
+            <input type="text" name="titulo" required><br>
+
+            <label>Autor(a):</label>
+            <input type="text" name="autor" required><br>
+
+            <div class="linha">
+                <div class="campo">
+                    <label>Nota (0 a 10):</label>
+                    <input type="number" name="nota" required min="0" max="10"><br> 
+                </div><br>
+
+                <div class="campo">
+                    <label>Categoria:</label>
+                    <select name="categoria" required>
+                        <option value="aventura">Aventura</option>
+                        <option value="biografia">Biografia</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="ficcao">Ficção científica</option>
+                        <option value="policial">Policial</option>
+                        <option value="romance">Romance</option>
+                        <option value="suspense">Suspense</option>
+                    </select><br>
+                </div>
+            </div>
+
+            <label>Descrição:</label>
+            <input type="text" name="descricao" required><br>    
+    
+            <button type="submit" class="botao-add">
+                Cadastrar
+                <img src="imagens/cadastrar.png" alt="Adicionar">
+            </button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
