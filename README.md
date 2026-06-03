@@ -9,7 +9,12 @@ Aplicação web desenvolvida para fins acadêmicos com o objetivo de auxiliar us
 - MySQL
 
 ## Como Acessar a Aplicação
-Clique no link abaixo para acessar:
-```text
-https://believable-embrace-production-0e3a.up.railway.app/listar
+Use o link abaixo para acessar:
+```bash
+https://believable-embrace-production-0e3a.up.railway.app/index.html
 ```
+
+## Vídeo Funcionamento
+<div align="center">
+  <img src="FuncionamentoAtividade-27-05.gif" width="600px"/>
+</div>
